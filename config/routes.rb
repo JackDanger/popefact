@@ -1,9 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :words
+  map.resources :users
 
-  map.resources :words
-
-  map.resources :words
+  map.resources :pairs
 
   map.resources :words
 
