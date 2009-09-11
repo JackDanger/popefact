@@ -1,8 +1,9 @@
 class CreateWords < ActiveRecord::Migration
   def self.up
     create_table :words do |t|
-      t.references :pair
       t.string :text
+      t.references :pair
+      t.references :user
 
       t.timestamps
     end

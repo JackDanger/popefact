@@ -1,9 +1,9 @@
 development:
   adapter: mysql
   encoding: utf8
-  database: popefact
-  username: carlos 
-  password: Leg4lize!
+  database: popefact-dev
+  username: root
+  password: 
   host: localhost
 
 test:

@@ -3,13 +3,13 @@
 <table>
   <tr>
     <th>Text</th>
-    <th>Word</th>
+    <th>Pair</th>
   </tr>
 
 <% @words.each do |word| %>
   <tr>
     <td><%=h word.text %></td>
-    <td><%=h word.word %></td>
+    <td><%=h word.pair. %></td>
     <td><%= link_to 'Show', word %></td>
     <td><%= link_to 'Edit', edit_word_path(word) %></td>
     <td><%= link_to 'Destroy', word, :confirm => 'Are you sure?', :method => :delete %></td>
