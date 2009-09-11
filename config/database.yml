@@ -2,15 +2,15 @@ development:
   adapter: mysql
   encoding: utf8
   database: popefact
-  username: root
-  password: 
+  username: carlos 
+  password: Leg4lize!
   host: localhost
 
 test:
   adapter: mysql
   encoding: utf8
   database: popefact-test
-  username: root
-  password: 
+  username: carlos
+  password: Leg4lize!
   host: localhost
 
