@@ -4,14 +4,15 @@ class Word < ActiveRecord::Base
   
   belongs_to :pair
   belongs_to :user
-  has_one :partner, :through => :pair, :source => :word
   
   def make_or_join_pair
-    if id % 2 == 1
-      pairing = Pair.create
-      self.pair = pairing
+    last_pair = Pair.last
+    if last_pair.blank? || last_pair.words.length > 1
+      self.pair = Pair.create
+      self.pair.words << self
     else
-      self.pair = Word.find_by_id(id - 1).pair
+      self.pair = last_pair
+      self.pair.words << self
     end
   end
 end

@@ -1,0 +1,16 @@
+<h1>Editing Pair</h1>
+
+<% form_for(@pair) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :votes %><br />
+    <%= f.text_field :votes %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @pair %> |
+<%= link_to 'Back', pairs_path %>
