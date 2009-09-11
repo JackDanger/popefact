@@ -2,12 +2,14 @@
 
 <table>
   <tr>
-    <th>Votes</th>
+    <th>POPE</th>
+    <th>FACT</th>
   </tr>
 
 <% @pairs.each do |pair| %>
   <tr>
-    <td><%=h pair.votes %></td>
+    <td><%=h pair.pope.text %></td>
+    <td><%=h pair.fact.text %></td>
     <td><%= link_to 'Show', pair %></td>
     <td><%= link_to 'Edit', edit_pair_path(pair) %></td>
     <td><%= link_to 'Destroy', pair, :confirm => 'Are you sure?', :method => :delete %></td>
