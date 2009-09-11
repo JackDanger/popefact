@@ -1,4 +1,3 @@
 .gitignore
 log/*
-config/database.rb
 config/database.yml
