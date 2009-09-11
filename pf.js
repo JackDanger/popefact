@@ -1,9 +1,5 @@
 $(function() {
-
 	var watchFuncs = function(){
-		$('a.help, #help a.close').click(function() {
-			$('#help').animate({"opacity" : "toggle", "height" : "toggle"}, "medium"); 
-		}); 
 		$('li.first').css("right", "100%").hide().animate({
 				"opacity": "toggle",
 				"right": "50%",
@@ -45,6 +41,11 @@ $(function() {
 
 	}
 	
+	$('a.help, #help a.close').click(function() {
+		$('#help').animate({"opacity" : "toggle", "height" : "toggle"}, "medium"); 
+	}); 
+
+
 	watchFuncs();   
 	$(window).bind("ajaxSuccess", watchFuncs); 
 	
