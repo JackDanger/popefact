@@ -1,9 +1,9 @@
 development:
   adapter: mysql
   encoding: utf8
-  database: popefact-dev
+  database: popefact
   username: root
-  password: 
+  password:
   host: localhost
 
 test:
@@ -11,6 +11,6 @@ test:
   encoding: utf8
   database: popefact-test
   username: root
-  password: 
+  password:
   host: localhost
 
